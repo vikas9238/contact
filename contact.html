@@ -222,11 +222,14 @@
                 Email.send({
                     SecureToken: "dd3359a3-cc99-427f-8027-7d8f915a0ff0",
                     To: 'vikashkumar9238@gmail.com',
-                    From: document.getElementById("email").value,
-                    Subject: "This is the subject",
-                    Body: "And this is the body"
+                    From: "rakeshkumar1037@gmail.com",
+                    Subject: "New Contact Form Enquiry",
+                    Body: Body: "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Subject: " + document.getElementById("subject").value
+                        + "<br> Message: " + document.getElementById("message").value
                 }).then(
-                    message => alert(message)
+                    message => alert("Message send Succesfully")
                 );
             }
         </script>
